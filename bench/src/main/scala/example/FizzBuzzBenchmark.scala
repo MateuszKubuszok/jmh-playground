@@ -1,6 +1,6 @@
 package example
 
-import org.openjdk.jmh.annotations.Benchmark
+import org.openjdk.jmh.annotations._
 
 class FizzBuzzBenchmark {
   
