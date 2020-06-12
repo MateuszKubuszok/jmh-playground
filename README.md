@@ -34,3 +34,43 @@ Setup environment variables:
 > open sources version.
 
 Then run `sbt` and start experimenting!
+
+### JITWatch
+
+In case you want to set up JITWatch to don't have errors on finding sources and classes
+you can reuse my config:
+
+Classes:
+```
+[test bench directory]/bench/target/scala-2.12/classes
+[test bench directory]/code/target/scala-2.12/classes
+[your home]/.sbt/boot/scala-2.12.4/lib/scala-library.jar
+[your home]/.ivy2/local/pl.project13.scala/sbt-jmh-extras/0.3.7/jars/sbt-jmh-extras.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-core/jars/jmh-core-1.23.jar
+[your home]/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-4.6.jar
+[your home]/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-generator-bytecode/jars/jmh-generator-bytecode-1.23.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-generator-reflection/jars/jmh-generator-reflection-1.23.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-generator-asm/jars/jmh-generator-asm-1.23.jar
+[your home]/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.3.jar
+```
+
+Sources:
+```
+[test bench directory]/code/src/main/scala-2.12
+[test bench directory]/code/src/main/scala
+[test bench directory]/code/src/main/java
+[test bench directory]/code/target/scala-2.12/src_managed/main
+[test bench directory]/bench/src/main/scala-2.12
+[test bench directory]/bench/src/main/scala
+[test bench directory]/bench/src/main/java
+[test bench directory]/bench/target/scala-2.12/src_managed/main
+[your home]/.ivy2/local/pl.project13.scala/sbt-jmh-extras/0.3.7/srcs/sbt-jmh-extras-sources.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-core/srcs/jmh-core-1.23-sources.jar
+[your home]/.ivy2/cache/net.sf.jopt-simple/jopt-simple/srcs/jopt-simple-4.6-sources.jar
+[your home]/.ivy2/cache/org.apache.commons/commons-math3/srcs/commons-math3-3.2-sources.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-generator-bytecode/srcs/jmh-generator-bytecode-1.23-sources.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-generator-reflection/srcs/jmh-generator-reflection-1.23-sources.jar
+[your home]/.ivy2/cache/org.openjdk.jmh/jmh-generator-asm/srcs/jmh-generator-asm-1.23-sources.jar
+[your home]/.ivy2/cache/org.ow2.asm/asm/srcs/asm-5.0.3-sources.jar
+```
